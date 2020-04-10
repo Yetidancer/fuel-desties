@@ -1,0 +1,20 @@
+<h1>Nearest Charging Station</h1>
+Name:<br>
+<%= @station_name %><br>
+Address:<br>
+<%= @station_address %>
+<%= @station_city %>, <%= @station_state %> <%= @station_zip %><br>
+Fuel type:<br>
+<%= @station_fuel_type %><br>
+Access times:<br>
+<%= @station_access_times %>
+
+<h2>Directions</h2>
+Distance to destination:<br>
+<%= @directions_distance %><br>
+Time to destination:<br>
+<%= @directions_time %><br>
+Turn by turn:<br>
+<% @directions_steps.each do |step| %>
+  <%= step %><br>
+<% end %>
